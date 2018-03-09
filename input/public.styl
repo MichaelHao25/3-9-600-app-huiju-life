@@ -1,0 +1,638 @@
+@import "reset.css";
+/*引入css文件的一种方式*/
+/*
+
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#99ffffff,endColorstr=#99ffffff)";
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff,endColorstr=#99ffffff);
+background:rgba(255,255,255,.8);
+
+
+ filter:alpha(opacity=40); 针对 IE8 以及更早的版本 */
+ body{
+ 	font-size: 16Px;
+ }
+body
+	&.mimh100vh
+		min-height 100vh
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		flex-direction column
+		justify-content space-between
+	&.bgf5f5f5
+		background #f5f5f5
+.container
+	padding 0 20px
+.puclic-header
+	display -webkit-flex
+	display -moz-flex
+	display -ms-flex
+	display -o-flex
+	display flex
+	align-items center
+	justify-content space-between
+	height 56px
+	background url('../img/header-bg.jpg') center top/100% auto no-repeat
+	.left-menu
+		display block
+		img
+			display block
+		.w31
+			width 31px
+		.w34
+			width 34px
+	.right-menu
+		display block
+		img
+			display block
+		.w37
+			width 37px
+		.w34
+			width 34px
+	.center-menu
+		h1
+			font-size 28px
+			color #fff
+			line-height 56px
+			font-weight normal
+		&.black
+			h1
+				color #000		
+		.nav
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+			align-items center
+			justify-content center
+			a
+				display block
+				padding 3px 0
+				margin 0 20px
+				font-size 20px
+				color #fff
+				opacity 0.7
+				border-bottom 3px solid transparent
+				&.active
+					border-bottom-color #fff
+					opacity 1
+.main
+	.page-about
+		padding-bottom 130px
+		.brand
+			padding 0 0 35px
+			img
+				display block
+				margin 0 auto
+				width 212px
+		h2
+		.version
+			font-size 30px
+			color #000
+			line-height 1.5
+			text-align center
+	.page-sport
+		display block
+		.bgfff
+			background #fff
+		.p30-0
+			padding 30px 0
+		.bdbf2f2f2
+			border-bottom 1px solid #f2f2f2
+		.height-15
+			height 15px
+			border-bottom 1px solid #f2f2f2
+		.height-88
+			height 88px
+		.date-range
+			font-size 22px
+			color #515151
+			line-height 46px
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+			justify-content space-around
+			.left-control
+			.right-control
+				display block
+				width 30px
+				background url('../img/hico8.png') center center/100% auto no-repeat
+			.right-control
+				background-image url('../img/hico9.png')
+		.water
+			font-size 16px
+			color #515151
+			line-height 1.5
+			text-align center
+		.sleep-quality
+			background #fff
+			.chart
+				padding 30px 0
+				width 580px
+				margin 0 auto
+				img
+					width 100%
+					display block
+			.project
+				display -webkit-flex
+				display -moz-flex
+				display -ms-flex
+				display -o-flex
+				display flex
+				justify-content space-around
+				align-items center
+				height 200px
+				.value
+					font-size 20px
+					color #22170d
+					line-height 2
+					text-align center
+					.text
+						font-size 45px
+						color #22170d
+						line-height 2
+						&.cf78f60
+							color #f78f60
+						&.cf2b31a
+							color #f2b31a
+		.report-list
+			.item
+				background #fff
+				border-bottom 1px solid #f2f2f2
+				.title
+					display -webkit-flex
+					display -moz-flex
+					display -ms-flex
+					display -o-flex
+					display flex
+					justify-content space-between
+					font-size 20px
+					color #000
+					line-height 60px
+					opacity 0.5
+					.more-info
+						span
+							padding-left 30px
+				.chart
+					padding-bottom 10px
+					height 280px
+					display -webkit-flex
+					display -moz-flex
+					display -ms-flex
+					display -o-flex
+					display flex
+					align-items flex-end
+					img
+						display block
+						width 100%
+					&.text
+						align-items center
+						justify-content center
+					.none
+						font-size 26px
+						color #d7d7d7
+	.page-sport-count
+		.data-switch
+			margin 30px 0
+			padding 6px 35px
+			background #85c048
+			border-radius 31px
+			.wrap
+				position relative
+				height 50px
+				display -webkit-flex
+				display -moz-flex
+				display -ms-flex
+				display -o-flex
+				display flex
+				&.left-0
+					&:after
+						left 0
+				&.left-33
+					&:after
+						left 33%
+				&.left-66
+					&:after
+						left 66%
+				&:after
+					content ""
+					position absolute
+					top 0
+					bottom 0
+					left 0
+					width 33.33%
+					background #6fac30
+					border-radius 25px
+					transition 0.3s
+			.item
+				position relative
+				z-index 1
+				flex 1
+				text-align center
+				line-height 50px
+				font-size 30px
+				color #fff
+				cursor pointer
+		.chart
+			img
+				display block
+				width 100%
+		.more-info
+			margin 30px 0
+			padding 30px 0
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+			flex-wrap wrap
+			border-radius 25px
+			background #81c146
+			.item
+				flex 0 0 50%
+				color #fff
+				text-align center
+				line-height 2
+				h3
+					font-size 26px
+				.number
+					font-size 30px
+					font-weight bold
+		.switch
+			a
+				display block
+				width 40px
+				margin 0 auto
+			img
+				display block
+				width 100%
+	.page-user-info
+		.h15
+			height 15px
+		.row
+			border-bottom 1px solid #f2f2f2
+			background #fff
+		.label
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+			justify-content space-between
+			align-items center
+			font-size 28px
+			color #000
+			line-height 100px
+			padding-right 30px
+			background url('../img/hico13.png') right center/17px auto no-repeat
+			&.pic
+				padding 5px 0
+				background none
+				padding-right 0
+			h3
+				flex 0 0 50%
+			.content
+				display block
+				flex 0 0 50%
+				display -webkit-flex
+				display -moz-flex
+				display -ms-flex
+				display -o-flex
+				display flex
+				align-items center
+				justify-content flex-end
+				img
+					display block
+					width 80px
+					border-radius 50%
+		input
+		select
+			width 100%
+			border none
+			outline none
+			text-align right
+			appearance none
+			font-size 26Px
+			color #ddd
+			line-height 36Px
+			height 36Px
+		select
+			width auto
+		input[type="date"]
+			width auto	
+		input[type="date"]::-webkit-calendar-picker-indicator
+			display none
+		input[type="date"]::-webkit-clear-button
+			display none
+		input
+			&::placeholder
+				color #ddd
+	.page-more
+		h2
+			font-size 26px
+			color #a3a3a3
+			line-height 2.5
+			border-bottom 1px solid #f2f2f2
+			background #fff
+		.h15
+			height 15px
+			border-bottom 1px solid #f2f2f2
+		.h50
+			height 100px
+		.op6
+			opacity 0.6
+			text-align center
+		.row
+			font-size 28px
+			color #000
+			line-height 96px
+			padding-right 30px
+			background #fff url('../img/hico13.png') right 13px center/17px auto no-repeat
+			border-bottom 1px solid #f2f2f2
+			a
+				display block
+				display -webkit-flex
+				display -moz-flex
+				display -ms-flex
+				display -o-flex
+				display flex
+				align-items center
+				justify-content flex-start
+				.icon
+					display -webkit-flex
+					display -moz-flex
+					display -ms-flex
+					display -o-flex
+					display flex
+					align-items center
+					justify-content center
+					padding-right 15px
+					width 70px
+				img
+					display block
+					width 100%
+			h3
+				width calc(100% - 85px)
+	.prople-info
+		.height-15
+			height 15px
+			border-bottom 1px solid #f2f2f2
+		.height-88
+			height 88px
+		.my-pictrue
+			background url('../img/header-bg.jpg') center -56px/100% auto no-repeat
+			a
+				display -webkit-flex
+				display -moz-flex
+				display -ms-flex
+				display -o-flex
+				display flex
+				justify-content flex-start
+				align-items center
+				height 160px
+				background url('../img/hico27.png') right center/19px auto no-repeat
+				.pic
+					border 5px solid #fff
+					border-radius 50%
+					img
+						width 90px
+						display block
+						border-radius 50%
+				.name
+					font-size 30px
+					color #fff
+					padding-left 30px
+		.today-me
+		.nice-me
+			background #fff
+			border-bottom 1px solid #f2f2f2
+			h3
+				font-size 26px
+				color #515151
+				line-height 60px
+		.today-me
+			.list
+				.item
+					display -webkit-flex
+					display -moz-flex
+					display -ms-flex
+					display -o-flex
+					display flex
+					justify-content space-between
+					align-items center
+					border-top 1px solid #f2f2f2
+					.left
+						display -webkit-flex
+						display -moz-flex
+						display -ms-flex
+						display -o-flex
+						display flex
+						align-items center
+						height 98px
+						.icon
+							padding-right 25px
+							width 57px
+							height 57px
+							img
+								display block
+								width 100%
+						b
+							padding-right 10px
+							font-weight bold
+							font-size 28px
+							line-height 98px
+						strong
+							display block
+							font-size 16px
+							line-height 98px
+					.right
+						span
+							display block
+							text-align center
+							font-size 16px
+							color #515151
+							line-height 1.5
+							&+span
+								color #ff524a
+								padding-right 20px
+								background url('../img/hico34.png') right center/12px auto no-repeat
+								&.up
+									background-image url('../img/hico35.png')
+		.nice-me
+			.swiper
+				border-top 1px solid #f2f2f2
+				.swiper-slide
+					padding 20px 0
+					&:first-child
+						.content
+							border-left 1px solid #f2f2f2
+					.content
+						line-height 1.5
+						text-align center
+						border-right 1px solid #f2f2f2
+						.icon
+							display -webkit-flex
+							display -moz-flex
+							display -ms-flex
+							display -o-flex
+							display flex
+							align-items center
+							justify-content center
+							height 70px
+							img
+								display block
+							img.w43
+								width 43px
+							img.w40
+								width 40px
+							img.w31
+								width 31px
+						.step
+							font-size 28px
+							color #14aeec
+							&.cfc9933
+								color #fc9933
+							&.cf55555
+								color #f55555
+						.unit
+						.date
+							font-size 16px
+							color #515151
+			.swiper-pagination
+				position static
+				padding 30px 0
+				span
+					width 40px
+					height 6px
+					background #c1e0a3
+					border-radius 0
+					margin 0 10px
+					&.swiper-pagination-bullet-active
+						background #84c148
+	.page-unit-set
+		.height-15
+			height 15px
+			background #f7f7f7
+			border-bottom 1px solid #f2f2f2	
+		h2
+			font-size 26px
+			color #a3a3a3
+			line-height 2.5
+			border-bottom 1px solid #f2f2f2
+		.select
+			.item
+				font-size 28px
+				color #000
+				line-height 98px
+				border-bottom 1px solid #f2f2f2
+				background url('../img/hico39.png') right 20px center/26px auto no-repeat
+				&.selected
+					background-image url('../img/hico40.png')
+	.page-analysis
+		.height-15
+			height 15px
+			border-bottom 1px solid #f2f2f2	
+		.height-88
+			height 88px
+		.sports
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+			justify-content center
+			flex-direction column
+			align-items center
+			padding 30px 0
+			background #fff
+			border-bottom 1px solid #f2f2f2
+			h3
+				font-size 30px
+				color #515151
+				padding-right 40px
+				background url('../img/hico41.png') right center/28px auto no-repeat
+			.old
+				padding-top 10px
+				font-size 16px
+				color #515151
+				line-height 1
+		.chart
+			background #fff
+			.steps
+				display -webkit-flex
+				display -moz-flex
+				display -ms-flex
+				display -o-flex
+				display flex
+				justify-content space-around
+				padding 20px 0
+				text-align center
+				h3
+					font-size 18px
+					color #515151
+					line-height 1
+				.number
+					padding-top 10px
+					font-size 32px
+					color #84c148
+					line-height 1
+			.pic
+				img
+					display block
+					width 100%
+.footer
+	background #fff
+	.copy-right
+		font-size 30px
+		color #252a30
+		line-height 1.5
+		padding-bottom 20px
+		text-align center
+	.menu
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		.item
+			flex 1
+			display block
+			text-align center
+			padding-top 10px
+			&.active
+				i
+					color #84c148
+			i
+				display block
+				font-size 14px
+				color #666
+				line-height 34px
+			span
+				display block
+				height 33px
+				background url('../img/hico1.png') center center/32px no-repeat	
+				&.icon-1
+					background-image url('../img/hico1.png')
+				&.icon-2
+					background-image url('../img/hico2.png')
+					background-size 41px auto
+				&.icon-3
+					margin -26px auto 0
+					width 76px
+					height 76px
+					border-radius 50%
+					border 3px solid #fff
+					background-color #84c148
+					background-image url('../img/hico3.png')
+					background-size 48px auto
+				&.icon-4
+					background-image url('../img/hico4.png')
+					background-size 33px auto
+				&.icon-5
+					background-image url('../img/hico5.png')
+					background-size 43px auto
