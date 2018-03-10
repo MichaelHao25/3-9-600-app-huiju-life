@@ -10,6 +10,7 @@ background:rgba(255,255,255,.8);
  filter:alpha(opacity=40); 针对 IE8 以及更早的版本 */
  body{
  	font-size: 16Px;
+ 	font-family "mocrsoft Yahei"
  }
 body
 	&.mimh100vh
@@ -465,9 +466,10 @@ body
 									background-image url('../img/hico35.png')
 		.nice-me
 			.swiper
-				border-top 1px solid #f2f2f2
 				.swiper-slide
 					padding 20px 0
+					border-bottom 1px solid #f2f2f2
+					border-top 1px solid #f2f2f2
 					&:first-child
 						.content
 							border-left 1px solid #f2f2f2
@@ -505,7 +507,7 @@ body
 							color #515151
 			.swiper-pagination
 				position static
-				padding 30px 0
+				padding 20px 0 30px
 				span
 					width 40px
 					height 6px
@@ -604,9 +606,19 @@ body
 			display block
 			text-align center
 			padding-top 10px
-			&.active
+			&.active,
+			&:hover
 				i
 					color #84c148
+				span
+					&.icon-1
+						background-image url('../img/hico1.png')
+					&.icon-2
+						background-image url('../img/green1.png')
+					&.icon-4
+						background-image url('../img/green2.png')
+					&.icon-5
+						background-image url('../img/green3.png')
 			i
 				display block
 				font-size 14px
@@ -617,7 +629,7 @@ body
 				height 33px
 				background url('../img/hico1.png') center center/32px no-repeat	
 				&.icon-1
-					background-image url('../img/hico1.png')
+					background-image url('../img/green4.png')
 				&.icon-2
 					background-image url('../img/hico2.png')
 					background-size 41px auto
