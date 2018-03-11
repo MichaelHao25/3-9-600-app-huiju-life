@@ -60,7 +60,9 @@ $('body *[href]').on('click', function() {
 	}
 });
 
-
+$('.puclic-header .center-menu .nav a').on('click', function() {
+	$(this).addClass('active').siblings().removeClass('active');
+});
 var mySwiper = new Swiper(' .swiper .swiper-container', {
 	pagination: ' .swiper .swiper-pagination',
 	slidesPerView: 3,

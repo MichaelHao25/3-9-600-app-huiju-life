@@ -107,7 +107,7 @@ body
 			height 15px
 			border-bottom 1px solid #f2f2f2
 		.height-88
-			height 88px
+			height 120px
 		.date-range
 			font-size 22px
 			color #515151
@@ -344,7 +344,7 @@ body
 			height 15px
 			border-bottom 1px solid #f2f2f2
 		.h50
-			height 100px
+			height 120px
 		.op6
 			opacity 0.6
 			text-align center
@@ -384,7 +384,7 @@ body
 			height 15px
 			border-bottom 1px solid #f2f2f2
 		.height-88
-			height 88px
+			height 120px
 		.my-pictrue
 			background url('../img/header-bg.jpg') center -56px/100% auto no-repeat
 			a
@@ -540,7 +540,7 @@ body
 			height 15px
 			border-bottom 1px solid #f2f2f2	
 		.height-88
-			height 88px
+			height 120px
 		.sports
 			display -webkit-flex
 			display -moz-flex
@@ -588,6 +588,10 @@ body
 					display block
 					width 100%
 .footer
+	position fixed
+	bottom 0
+	left 0
+	right 0
 	background #fff
 	.copy-right
 		font-size 30px
@@ -648,3 +652,91 @@ body
 				&.icon-5
 					background-image url('../img/hico5.png')
 					background-size 43px auto
+
+.share-commponents
+	&.fadeIn
+		.share-commponents-layout
+			display block
+			background rgba(0,0,0,0.3)
+		.wrap
+			display block
+			animation dropUp 1s forwards
+	&.fadeOut
+		.share-commponents-layout
+			display block
+			background rgba(0,0,0,0)
+		.wrap
+			display block
+			animation dropDown 1s forwards
+	.share-commponents-layout
+		transition 0.3s
+	.wrap
+		position absolute
+		bottom 0
+		left 0
+		right 0
+		display none
+	.list
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		padding 0 20px 30px
+		justify-content flex-start
+		align-items center
+		flex-wrap wrap
+		background #fff
+		a
+			display block
+			flex 0 0 24%
+			img
+				display block
+				margin 30px auto 15px
+			.text
+				display block
+				font-size 20px
+				color #000
+				text-align center
+	a.btn-cancel
+		margin-top 1px
+		font-size 20px
+		color #00baff
+		line-height 60px
+		text-align center
+		display block
+		height 60px
+		background #fff
+.share-commponents-layout
+	position fixed
+	bottom 0
+	left 0
+	right 0
+	top 0
+	z-index 100
+	background rgba(0,0,0,0.3)
+	display none
+
+
+
+@keyframes dropDown{
+	0%{
+		transform translateY(0)
+	}
+	99%{
+		transform translateY(100%)	
+	}
+	100%{
+		display none
+		transform translateY(100%)
+	}
+}
+@keyframes dropUp{
+	0%{
+		display block
+		transform translateY(100%)
+	}
+	100%{
+		transform translateY(0)	
+	}
+}

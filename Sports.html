@@ -17,7 +17,7 @@
 	<header class="puclic-header container">
 		<a href="#" class="left-menu"><img src="img/hico6.png" alt="" class="w31"></a>
 		<div class="center-menu"><div class="nav"><a href="#">计步</a><a href="#" class="active">睡眠</a><a href="#">心率</a></div></div>
-		<a href="#" class="right-menu"><img src="img/hico7.png" alt="" class="w37"></a>
+		<a href="#" class="right-menu share"><img src="img/hico7.png" alt="" class="w37"></a>
 	</header>
 	<div class="main">
 		<div class="page-sport">
@@ -52,17 +52,17 @@
 		</div>
 	</div>
 
-	<div class="footer container">
+	<div class="footer container pc">
 		<div class="menu">
-			<a href="My.html" class="item active">
+			<a href="My.html" class="item ">
 				<span class="icon-1"></span>
 				<i>我的</i>
 			</a>
-			<a href="SportsStatistics.html" class="item">
+			<a href="Analysis.html" class="item">
 				<span class="icon-2"></span>
 				<i>分析</i>
 			</a>
-			<a href="Sports.html" class="item">
+			<a href="Sports.html" class="item active">
 				<span class="icon-3"></span>
 			</a>
 			<a href="Report.html" class="item">
@@ -75,8 +75,52 @@
 			</a>
 		</div>
 	</div>
+	<div class="share-commponents">
+		<div class="share-commponents-layout pc">
+			<div class="wrap">
+				<div class="list">
+					<a href="#">
+						<img src="img/wechat.png" alt="">
+						<span class="text">微信好友</span>
+					</a>
+					<a href="#">
+						<img src="img/wechat-2.png" alt="">
+						<span class="text">微信朋友圈</span>
+					</a>
+					<a href="#">
+						<img src="img/wechat-3.png" alt="">
+						<span class="text">QQ</span>
+					</a>
+					<a href="#">
+						<img src="img/wechat-4.png" alt="">
+						<span class="text">QQ空间</span>
+					</a>
+					<a href="#">
+						<img src="img/wechat-5.png" alt="">
+						<span class="text">Facebook</span>
+					</a>
+					<a href="#">
+						<img src="img/wechat-6.png" alt="">
+						<span class="text">Twitter</span>
+					</a>
+				</div>
+				<a href="javascript:;" class="btn-cancel">取消</a>
+			</div>
+		</div>
+	</div>
 	<script src="js/jquery-3.1.0.min.js"></script>
 	<script src="js/js.js"></script>
+	<script>
+		$('.puclic-header .right-menu.share').on('click', function() {
+			$('.share-commponents').addClass('fadeIn').removeClass('fadeOut')
+		});
+		$('.share-commponents a.btn-cancel').on('click', function() {
+			$('.share-commponents').addClass('fadeOut').removeClass('fadeIn')
+			setTimeout(function(){
+				$('.share-commponents').removeClass('fadeOut');
+			},1200);
+		});
+	</script>
 </body>
 </html>
 
